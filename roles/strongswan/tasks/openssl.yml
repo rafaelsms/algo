@@ -166,6 +166,8 @@
         cut -f 2 -d ' '
       register: ssl_version
       run_once: true
+      args:
+          executable: bash
 
     - name: Set OpenSSL version fact
       set_fact:
